@@ -1,0 +1,22 @@
+section {
+    margin-bottom: 10px;
+}
+.product {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px 30px;
+    display: flex;
+}
+
+section img {
+    max-width: 150px;
+    padding: 15px 0 0;
+}
+
+article {
+    padding: 40px 0 0 40px;
+}
+
+.wrapper {
+    display: flex;
+}

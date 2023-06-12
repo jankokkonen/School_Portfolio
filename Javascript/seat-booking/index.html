@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istuinten varaus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css".css>
+</head>
+<body>
+    <section class="movie-container">
+        <label>Valitse näytös</label>
+        <select id="movie">
+            <option value="220">luontodokumentti 1</option>
+            <option value="320">luontodokumentti 2</option>
+            <option value="250">luontodokumentti 3</option>
+            <option value="260">luontodokumentti 4</option>
+        </select>
+    </section>
+
+    <ul class="showcase">
+        <li>
+            <div class="seat">
+                <small>Vapaana</small>
+            </div>
+        </li>
+
+        <li>
+            <div class="seat selected">
+                <small>Valitut</small>
+            </div>
+        </li>
+
+        <li>
+            <div class="seat sold">
+                <small>Varatut</small>
+            </div>
+        </li>
+    </ul>
+
+    <section class="container">
+
+        <div class="screen"></div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat sold"></div>
+            <div class="seat"></div>
+        </div>
+
+    </section>
+
+    <p class="text">
+        Olet valinnut <span id="count">0</span> paikkaa hintaan <span id="total">0</span>€
+    </p>
+    <script src="script.js"></script>
+</body>
+</html>

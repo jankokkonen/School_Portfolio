@@ -1,0 +1,24 @@
+<section class="container">
+    
+    <div class="vertical-center">
+        <button (click)="onBtnClicked()">Display Details</button>
+    </div>
+    
+    <div class="lorem-background">
+    <p *ngIf="btnClicked">
+        Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Adipisci ex commodi animi ab, 
+        suscipit delectus distinctio inventore quisquam perspiciatis, 
+        voluptatibus vitae doloremque numquam magnam dolorum. Sunt, officia!
+        <br>
+        <br>
+    </p>
+    </div> 
+
+    <ul *ngFor="let value of myArray">
+        <li *ngIf="myArray.length > 0" [style.background-color]="value >= 5 ? 'black' : 'inherit'" [style.color]="value >= 5 ? 'white' : 'inherit'">
+         {{ value }}
+        </li>
+    </ul>   
+
+</section>

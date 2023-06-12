@@ -1,0 +1,20 @@
+.app-servers {
+    background-color: black;
+}
+.app-servers * {
+    color: bisque;
+}
+
+input {
+    color: black !important;
+    width: 300px;
+    margin: 10px 0 15px;
+}
+
+.sisennys {
+    padding-left: 10px;
+}
+
+button {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,12 @@
+<div class="search container">
+
+    <span>Search:</span>
+        
+    <input type="text" [(ngModel)]="enterSearchValue" (input)="onSearchTextChanged()">
+        
+    <select [(ngModel)]="sortOrder" (change)="onSortingChanged()">
+        <option value="asc">Alphabetically</option>
+        <option value="newest">Newest</option>
+    </select>
+
+</div>

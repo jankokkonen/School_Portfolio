@@ -1,0 +1,188 @@
+body {
+    background-image: url("../html-ja-css/pretzel/images/grunge.png");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#special {
+    background-color: #697f87;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+#pretzel-logo {
+    display: block;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+}
+
+#nav-desktop {
+    display: none;
+}
+
+#main {
+    border-top: double;
+    padding-top: 15px;
+}
+
+#main-p-top {
+    line-height: 1.5em;
+}
+
+#main-p-low {
+    line-height: 1.3em;
+}
+
+#pretzel-img {
+    padding: 15px 0 15px;
+    width: 100%;
+}
+
+#sidebar {
+    display: none;
+}
+
+#footer-text {
+    opacity: .5;
+    text-align: center;
+    font-size: .8em;
+    padding-top: 20px;
+}
+
+#footer-logo {
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+
+#header-nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#header-nav ul li {
+    font-size: 12px;
+    text-align: center;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 426px) {
+    #special {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    #pretzel-logo {
+        float: left;
+        width: 50px;
+    }
+    #pretzel-img {
+        max-height: 350px;
+    }
+
+    #sidebar {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .callout {
+        line-height: 1.3em;
+        text-align: center;
+        padding: 30px 20px;
+        background-color: #f8e5c2;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+
+    #sidebar h1 {
+        padding: 10px 0;
+    }
+
+    #sidebar nav{
+        border-bottom: .5px solid black;
+        padding-bottom: 20px;
+    }
+
+    #header-nav ul li {
+        padding: 30px 0;
+    }
+
+    #callout-nav ul{
+        column-count: 2;
+        padding: 10px;
+    }
+
+    #footer-logo {
+        width: 10%;
+    }
+    
+}
+
+@media screen and (min-width: 769px) {
+    nav ul li {
+        width: 20%;
+    }
+    #special {
+        width: 960px;
+        margin: auto;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+    }
+    #header-nav ul li{
+        text-align: unset;
+        padding-left: 10%;
+    }
+    #nav-desktop {
+        display: block;
+    }
+    #wrapper {
+        margin: auto;
+        width: 960px;
+        
+    }
+    #main-main {
+        display: flex;
+    }
+    #main {
+        width: 60%;
+        padding-right: 10px;
+    }
+
+    #sidebar {
+        border-top: 1px solid black;
+        width: 40%;
+        padding-left: 10px;
+    }
+    #pretzel-img {
+        max-height: 500px;
+    }
+    .callout {
+        padding: 20px 10px;
+    }
+    #footer-text {
+        font-size: 1em;
+        padding-top: 40px;
+    }
+    
+    #footer-logo {
+        padding-top: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        width: 7%;
+    }
+}   

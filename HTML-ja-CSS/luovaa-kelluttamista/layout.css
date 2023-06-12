@@ -1,0 +1,142 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        margin: 0;
+    }
+    .container {
+        margin: 0 0 5px 0;
+        width: 100%;
+        min-width: 320px;
+        padding: 10px;
+    }
+}
+
+.container {
+    padding: 10px;
+    display: grid;
+    grid-column-gap: 30px;
+    width: 330px;
+    margin: 10px auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "kuva2 otsikko2 otsikko2"
+        "kuva2 teksti2 teksti2"
+
+        "otsikko3 otsikko3 kuva3"
+        "teksti3 teksti3 kuva3"
+
+        "kuva otsikko otsikko"
+        "kuva teksti teksti"
+    ;
+
+    border: .5px solid black;
+    border-radius: 5px;
+    background-color: gainsboro;
+    background-image: linear-gradient(to bottom right, gainsboro, white);
+    padding: 1em;
+}
+
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.heading {
+    grid-area: otsikko;
+    margin-bottom: 10px;
+    font-size: 130%;
+    letter-spacing: 1px;
+}
+
+.image {
+    grid-row: 1 / span 2;
+    grid-area: kuva;
+}
+
+.image img {
+    padding: 5px;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid darkgrey;
+    border-right: 1px solid darkgrey;
+    box-shadow: 3px 3px darkgrey;
+}
+
+.text {
+    grid-area: teksti;
+    font-size: 85%;
+    line-height: 1.5em;
+}
+
+.text-hki {
+    padding-bottom: 50px;
+}
+
+.text-trk {
+    padding-bottom: 50px;
+}
+
+
+.heading-hki {
+    grid-area: otsikko2;
+    margin-bottom: 10px;
+    font-size: 130%;
+    letter-spacing: 1px;
+}
+
+.image-hki {
+    grid-row: 1 / span 2;
+    grid-area: kuva2;
+}
+.image-hki img {
+    padding: 5px;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid darkgrey;
+    border-right: 1px solid darkgrey;
+    box-shadow: 3px 3px darkgrey;
+}
+
+.text-hki {
+    grid-area: teksti2;
+    font-size: 85%;
+    line-height: 1.5em;
+}
+
+.heading-trk {
+    grid-area: otsikko3;
+    margin-bottom: 10px;
+    font-size: 130%;
+    letter-spacing: 1px;
+}
+
+.image-trk {
+    grid-row: 1 / span 2;
+    grid-area: kuva3;
+}
+.image-trk img {
+    padding: 5px;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid darkgrey;
+    border-right: 1px solid darkgrey;
+    box-shadow: 3px 3px darkgrey;
+}
+
+.text-trk {
+    grid-area: teksti3;
+    font-size: 85%;
+    line-height: 1.5em;
+}

@@ -1,0 +1,90 @@
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 1rem 1rem 1rem 4rem;
+    list-style: 1.5;
+}
+
+h1, h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+table {
+    margin-bottom: 1rem;
+}
+
+tr {
+    line-height: 1.5;
+}
+
+td {
+    padding-right: 1rem;
+}
+
+button {
+    margin: 10px;
+}
+
+/*CSS muotoilut JavaScriptin avulla*/
+
+.rivit-vierekkain > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rivit-vierekkain > ul > div {
+    padding: 0 2rem;
+}
+
+.rivit-vierekkain > ul > div > li {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.rivit-vierekkain > ul > div > ul {
+    background-color: lightgray;
+}
+
+.dotted {
+    text-decoration: none;
+    border-bottom: 3px #7f180f dotted;
+    color: #7f180f;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.fa-file-pdf{
+    color: orangered;
+}
+
+.fa-circle-info{
+    color: lightgreen;
+}
+
+.fa-envelope {
+    color: orangered;
+}
+
+.fa-solid {
+    display: none;
+}
+
+.table-js1 tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.table-js2 tr:nth-child(odd) {
+    background-color: #dddddd;
+}

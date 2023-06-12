@@ -1,0 +1,99 @@
+body {
+    font-family: Gotham, helvetica, arial, sans-serif;
+    background-color: darkcyan;
+    padding: 10px;
+}
+.fa-square-facebook{
+    color: white;
+}
+.facebook{
+    background-color: #3b5999;
+}
+.fa-twitter{
+    color: white;
+}
+.twitter {
+    background-color: #55acef;
+}
+.fa-envelope{
+    color: white;
+}
+.envelope {
+    background-color: gray;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.wrapper > * {
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+.header {
+    background-color: gold;
+}
+.main {
+    background-color: darkorange;
+}
+.aside-1 {
+    background-color: mediumseagreen;
+}
+.aside-2 {
+    background-color: seagreen;
+}
+.footer {
+    background-color: lightgreen;
+}
+.parent {
+    padding: 0;
+}
+.parent-some {
+    margin: 13px -10px -10px -10px;
+}
+ul {
+    display: flex;
+    display: row;
+}
+
+ul li {
+    flex-grow: 1;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: solid 1px black;
+}
+
+@media screen and (min-width:426px) {
+    .wrapper {
+        flex-direction: row;
+    }
+    .aside-1 {
+        flex-basis: auto;
+    }
+    .aside-2 {
+        flex-basis: auto;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .aside-1 {
+        order: 1;
+        flex-basis: 0px;
+    }
+    .main {
+        order: 2;
+        flex-basis: 400px;
+    }
+    .aside-2 {
+        order: 3;
+        flex-basis: 0px;
+    }
+    .footer {
+        order: 5;
+    }
+    .parent-some {
+        order: 4;
+    }
+}

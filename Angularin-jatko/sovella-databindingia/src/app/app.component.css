@@ -1,0 +1,12 @@
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    padding: 10px 30px 100px;
+    width: 250px;
+}
+
+label {
+    padding: 10px 0;
+}
+

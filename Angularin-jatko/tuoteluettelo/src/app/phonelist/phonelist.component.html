@@ -1,0 +1,21 @@
+<app-phone-search 
+  (searchTextChanged)="onSearchTextEntered($event)"
+  (sortingChanged)="onSortingChanged($event)">
+</app-phone-search>
+<ng-container *ngFor="let product of productList">
+<section class="container">
+    <div class="product" *ngIf="product.name.toLowerCase().split(' ')[0].startsWith(searchText)">
+            <figure>
+                <img [src]="'../../assets/puhelinten-tuotetiedot/' + 
+                product.imageUrl" alt="Product image">
+            </figure>
+            <article>
+                <a routerLink="/details/{{ product.id }}">{{ product.name }}</a>
+                <p>{{ product.snippet }}</p>
+                <!-- <p>{{ product.id }}</p> -->
+                <!-- <p>{{ product.age }}</p> -->
+            </article>
+    </div>
+</section>
+</ng-container>
+

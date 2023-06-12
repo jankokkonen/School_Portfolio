@@ -1,0 +1,32 @@
+li {
+    list-style: none;
+    text-align: center;
+}
+ul {
+    padding-left: 0;
+}
+
+.container {
+    max-width: 400px;
+}
+.vertical-center {
+    display: flex;
+    justify-content: center;
+
+}
+button {
+    padding: 10px 15px;
+    margin: 30px 0 15px;
+    background-color: orange;
+    border-radius: 5px;
+    border: 2px lightyellow solid;
+}
+.lorem-background {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.lorem-background p {
+    padding: 10px;
+    text-align: center;
+}

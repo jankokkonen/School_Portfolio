@@ -1,0 +1,66 @@
+<div *ngIf="phoneDetail">
+  <div class="container d-flex p-2">
+  <div>
+    <img [src]="'../../assets/puhelinten-tuotetiedot/' + phoneDetail.images[0]" alt="Product image">
+  </div>
+  <div class="info">
+    <h2>{{ phoneDetail.name }}</h2>
+    <p>{{ phoneDetail.description }}</p>
+    <div class="">
+      <div class="row">
+        <div class="col-md-2" *ngFor="let image of phoneDetail.images.slice(0,3)">
+          <figure class="images">
+            <img [src]="'../../assets/puhelinten-tuotetiedot/' + image" alt="Product image">
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2" *ngFor="let image of phoneDetail.images.slice(3)">
+          <figure class="images">
+            <img [src]="'../../assets/puhelinten-tuotetiedot/' + image" alt="Product image">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container d-flex">
+    <div class="box">
+      <h5>availability</h5>
+      <p>{{ phoneDetail.availability }}</p>
+    </div>
+    <div class="box">
+      <h5>Battery</h5>
+      <b>Type</b>
+      <p>{{ phoneDetail.battery.type }}</p>
+      <b>Talk Time</b>
+      <p>{{ phoneDetail.battery.talkTime }}</p>
+      <b>Standby time (max)</b>
+      <p>{{ phoneDetail.battery.standbyTime }}</p>
+    </div>
+    <div class="box">
+      <h5>Storage and Memory</h5>
+      <b>RAM</b>
+      <p>{{ phoneDetail.storage.ram }}</p>
+      <b>Internal Storage</b>
+      <p>{{ phoneDetail.storage.flash }}</p>
+    </div>
+    <div class="box">
+      <h5>Connectivity</h5>
+      <b>Network Support</b>
+      <b>WiFi</b>
+      <p>{{ phoneDetail.connectivity.wifi }}</p>
+      <b>Bluetooth</b>
+      <p>{{ phoneDetail.connectivity.bluetooth }}</p>
+      <b>Infrared</b>
+      <br>
+      <p *ngIf="phoneDetail.connectivity.infrared; else noInfrared"><i class="fas fa-check"></i></p>
+      <ng-template #noInfrared><i class="fas fa-times"></i></ng-template>
+      <br>
+      <b>GPS</b>
+      <p *ngIf="phoneDetail.connectivity.gps; else noGPS"><i class="fas fa-check"></i></p>
+      <ng-template #noGPS><i class="fas fa-times"></i></ng-template>
+    </div>
+  </div>
+</div>
+<div *ngIf="!phoneDetail">Loading...</div>

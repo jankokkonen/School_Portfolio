@@ -1,0 +1,42 @@
+.main {
+    width: 560px;
+    margin: auto;
+}
+
+#otsikko {
+    font-size: 35px;
+    color: #cccccc;
+    letter-spacing: 15px;
+    padding: 20px 0;
+}
+
+.main2 ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.main2 li {
+    padding: 20px 15px 5px;
+
+}
+
+.main2 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main2 {
+    background-color: #cccccc;;
+}
+
+#placeholder {
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+}
+
+#description {
+    padding: 0 0 20px 15px;
+    font-size: 15px;
+}

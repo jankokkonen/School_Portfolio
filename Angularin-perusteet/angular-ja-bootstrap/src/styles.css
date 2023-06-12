@@ -1,0 +1,16 @@
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    border: lightgray dashed 1px;
+    text-align: center;
+}
+
+.wrapper {
+    width: 30%;
+    margin: auto;
+}

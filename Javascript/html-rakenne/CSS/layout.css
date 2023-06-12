@@ -1,0 +1,22 @@
+body {
+    max-width: 750px;
+}
+
+.ylatunniste {
+    padding-bottom: 10px;
+}
+
+.ylatunniste h1{
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#rinnakkain {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+#rinnakkain img {
+    max-height: 200px;
+}
