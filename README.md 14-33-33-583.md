@@ -1,1 +1,0 @@
-# git-ja-github-tutorial
